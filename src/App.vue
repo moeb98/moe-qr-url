@@ -172,7 +172,7 @@ html {
     background-color: #222;
     top: 0px;
     width: 100%;
-    margin-left: -40px;
+    margin-left: -80px;
     max-width: 450px;
     height: 100%;
     .close-modal {
