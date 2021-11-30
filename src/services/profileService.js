@@ -5,8 +5,9 @@ const profileService = {
     const jsonString = localStorage.getItem(localStorageKey);
     const emptyProfile = {
       name: null,
+      email: null,
+      phone: null,
       url: null,
-      // phone: null,
     };
 
     return jsonString ? JSON.parse(atob(jsonString)) : emptyProfile;

@@ -63,6 +63,8 @@ export default {
       // own profile
       profile: {
         name: null,
+        email: null,
+        phone: null,
         url: null,
       },
 
@@ -106,9 +108,11 @@ export default {
     },
 
     // show QR code for url
-    displayQrCode(contact) {
+    displayQrCode(contact, elementId) {
       contact = JSON.stringify({
-        // name: contact.name,
+        name: contact.name,
+        email: contact.email,
+        phone: contact.phone,
         url: contact.url,
       });
 
