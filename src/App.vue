@@ -49,8 +49,11 @@ import QRCode from 'qrcode';
 import md5 from 'md5';
 import profileService from '@/services/profileService';
 import contactService from '@/services/contactService';
+import Tabs from "./components/Tabs.vue";
+import Tab from "./components/Tab.vue";
 
 export default {
+  components: { Tabs, Tab },
   data() {
     return {
       // boolean variables to keep track of pop-up windows being shown
